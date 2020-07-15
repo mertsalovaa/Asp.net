@@ -1,0 +1,170 @@
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\Asp_01 intro.dll.config
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\Asp_01 intro.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\Asp_01 intro.pdb
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\csc.exe
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\csc.exe.config
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\csc.rsp
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\csi.exe
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\csi.exe.config
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\csi.rsp
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\System.AppContext.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\System.Collections.Immutable.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\System.Console.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\System.Globalization.Calendars.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\System.IO.Compression.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\System.IO.FileSystem.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\System.Net.Http.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\System.Net.Sockets.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\System.Reflection.Metadata.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\System.ValueTuple.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\System.Xml.XPath.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\vbc.exe
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\vbc.exe.config
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\vbc.rsp
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\VBCSCompiler.exe
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\roslyn\VBCSCompiler.exe.config
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\Microsoft.Web.Infrastructure.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\System.Web.Helpers.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\System.Web.Mvc.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\System.Web.Razor.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\System.Web.Webpages.Deployment.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\System.Web.Webpages.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\System.Web.Webpages.Razor.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\System.Web.Razor.xml
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\System.Web.Webpages.xml
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\System.Web.Webpages.Deployment.xml
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\System.Web.Webpages.Razor.xml
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\System.Web.Helpers.xml
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\System.Web.Mvc.xml
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\ru\System.Web.Razor.resources.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\ru\System.Web.Webpages.resources.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\ru\System.Web.Webpages.Deployment.resources.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\ru\System.Web.Webpages.Razor.resources.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\ru\System.Web.Helpers.resources.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\ru\System.Web.Mvc.resources.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\obj\Debug\Asp_01 intro.csproj.CoreCompileInputs.cache
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\obj\Debug\Asp_01 intro.csproj.CopyComplete
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\obj\Debug\Asp_01 intro.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\obj\Debug\Asp_01 intro.pdb
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\obj\Debug\Asp_01 intro.csprojAssemblyReference.cache
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\EntityFramework.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\EntityFramework.SqlServer.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\EntityFramework.xml
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\EntityFramework.SqlServer.xml
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\bin\ru\EntityFramework.resources.dll
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\obj\Debug\Asp_01_intro.Migrations.first.resources
+E:\Академія\4 semestr\Asp.net\Asp_01 intro\Asp_01 intro\obj\Debug\Asp_01 intro.csproj.GenerateResource.cache
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\Asp_01 intro.dll.config
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\Asp_01 intro.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\Asp_01 intro.pdb
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\csc.exe
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\csc.exe.config
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\csc.rsp
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\csi.exe
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\csi.exe.config
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\csi.rsp
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\System.AppContext.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\System.Collections.Immutable.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\System.Console.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\System.Globalization.Calendars.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\System.IO.Compression.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\System.IO.FileSystem.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\System.Net.Http.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\System.Net.Sockets.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\System.Reflection.Metadata.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\System.ValueTuple.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\System.Xml.XPath.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\vbc.exe
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\vbc.exe.config
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\vbc.rsp
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\VBCSCompiler.exe
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\roslyn\VBCSCompiler.exe.config
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\EntityFramework.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\EntityFramework.SqlServer.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\Microsoft.Web.Infrastructure.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\System.Web.Helpers.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\System.Web.Mvc.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\System.Web.Razor.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\System.Web.Webpages.Deployment.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\System.Web.Webpages.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\System.Web.Webpages.Razor.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\EntityFramework.xml
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\EntityFramework.SqlServer.xml
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\System.Web.Razor.xml
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\System.Web.Webpages.xml
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\System.Web.Webpages.Deployment.xml
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\System.Web.Webpages.Razor.xml
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\System.Web.Helpers.xml
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\System.Web.Mvc.xml
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\ru\EntityFramework.resources.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\ru\System.Web.Razor.resources.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\ru\System.Web.Webpages.resources.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\ru\System.Web.Webpages.Deployment.resources.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\ru\System.Web.Webpages.Razor.resources.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\ru\System.Web.Helpers.resources.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\bin\ru\System.Web.Mvc.resources.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\obj\Debug\Asp_01 intro.csprojAssemblyReference.cache
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\obj\Debug\Asp_01_intro.Migrations.first.resources
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\obj\Debug\Asp_01 intro.csproj.GenerateResource.cache
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\obj\Debug\Asp_01 intro.csproj.CoreCompileInputs.cache
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\obj\Debug\Asp_01 intro.csproj.CopyComplete
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\obj\Debug\Asp_01 intro.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Asp_01 intro\Asp_01 intro\obj\Debug\Asp_01 intro.pdb

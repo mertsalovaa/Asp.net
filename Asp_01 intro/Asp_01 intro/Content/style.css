@@ -1,0 +1,17 @@
+﻿body {
+}
+
+.my-card {
+    background: lightblue;
+    padding: 20px;
+}
+
+    .my-card:hover {
+        cursor: pointer;
+        box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+    }
+
+ul li {
+    padding: 5px;
+
+}

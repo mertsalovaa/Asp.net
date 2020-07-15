@@ -1,0 +1,28 @@
+﻿
+@using Asp_01_intro.Models
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div>
+    <h1 class="text-center" style="background-color: olive;">My books</h1>
+    <div class="container">
+        <div class="row">
+            @foreach (Book item in ViewBag.Books)
+            {
+                <div class="col-3">
+                    <div class="card my-card" onclick="go(@item.Id)">
+                        <div class="card-header">@item.Name</div>
+                        <div class="card-body">@item.Author</div>
+                        <div class="card-title text-center">@item.Pages</div>
+                        <div class="card-text text-right">@item.Year</div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+

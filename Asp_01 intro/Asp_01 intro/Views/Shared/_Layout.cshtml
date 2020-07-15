@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+        <h5 class="my-0 mr-md-auto font-weight-normal">Company name</h5>
+        <nav class="my-2 my-md-0 mr-md-3">
+            <a class="p-2 text-dark" href="#">Features</a>
+            <a class="p-2 text-dark" href="#">Enterprise</a>
+            <a class="p-2 text-dark" href="#">Support</a>
+            <a class="p-2 text-dark" href="#">Pricing</a>
+        </nav>
+        <a class="btn btn-outline-primary" href="#">Sign up</a>
+    </div>
+
+    <div>
+        @RenderBody()
+    </div>
+    <footer class="page-footer font-small special-color-dark pt-4">
+
+        <!-- Footer Elements -->
+        <div style="background-color: darkslategray" class="container">
+
+            <!-- Social buttons -->
+            <ul style="color: white" class="list-unstyled list-inline text-center">
+                <li style="background-color: darkslateblue" class="list-inline-item">
+                    <a class="btn-floating btn-fb mx-1">
+                        <i class="fab fa-facebook-f"> </i>
+                    </a>
+                </li>
+                <li style="background-color: cornflowerblue" class="list-inline-item">
+                    <a class="btn-floating btn-tw mx-1">
+                        <i class="fab fa-twitter"> </i>
+                    </a>
+                </li>
+                <li style="background-color: orangered" class="list-inline-item">
+                    <a class="btn-floating btn-gplus mx-1">
+                        <i class="fab fa-google-plus-g"> </i>
+                    </a>
+                </li>
+                <li style="background-color: dodgerblue" class="list-inline-item">
+                    <a class="btn-floating btn-li mx-1">
+                        <i class="fab fa-linkedin-in"> </i>
+                    </a>
+                </li>
+                <li style="background-color: palevioletred" class="list-inline-item">
+                    <a class="btn-floating btn-dribbble mx-1">
+                        <i class="fab fa-dribbble"> </i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div style="background-color: black" class="footer-copyright text-center py-3">
+            © 2020 Copyright:
+            <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+
+    <script src="~/Scripts/jquery-3.0.0.js"></script>
+    <script src="~/Scripts/popper.min.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/script.js"></script>
+    <script src="https://kit.fontawesome.com/39c9a805b6.js" crossorigin="anonymous"></script>
+</body>
+</html>

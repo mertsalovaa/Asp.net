@@ -1,0 +1,26 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div>
+    <h2 class="text-center" style="margin-bottom: 10px">@ViewBag.Detail.Name</h2>
+    <div class="container ">
+        <div class="row">
+            <div class="col-4">
+                <div class="card">
+                    <img class="card-img-top" src="@ViewBag.Detail.Img" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">@ViewBag.Detail.Name</h5>
+                        <p class="card-text">@ViewBag.Detail.Author</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">@ViewBag.Detail.Pages</li>
+                        <li class="list-group-item">@ViewBag.Detail.Year</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
