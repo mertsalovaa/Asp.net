@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30309.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EscapeQuest_DZ", "EscapeQuest_DZ\EscapeQuest_DZ.csproj", "{507AD870-6760-46DF-B414-BFB99DFB8005}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{507AD870-6760-46DF-B414-BFB99DFB8005}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{507AD870-6760-46DF-B414-BFB99DFB8005}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{507AD870-6760-46DF-B414-BFB99DFB8005}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{507AD870-6760-46DF-B414-BFB99DFB8005}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B9B3417-9675-4345-A720-6E0AB8AC2E7C}
+	EndGlobalSection
+EndGlobal

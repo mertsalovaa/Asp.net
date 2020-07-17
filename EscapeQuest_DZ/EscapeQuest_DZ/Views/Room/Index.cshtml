@@ -1,0 +1,35 @@
+﻿@using EscapeQuest_DZ.Models
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div class="widths">
+        <div class="container">
+            <div class="row">
+                @foreach (EscapeQuest item in ViewBag.Rooms)
+                {
+                    <div class="col-sm-8">
+                        <div class="card bg-dark text-white d-flex justify-content-end" style="height: 202px; margin-bottom:20px">
+                            <img class="card-img" src="..." alt="EscapeRoom image">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">@item.Name</h5>
+                                <p class="card-text">@item.CountPlayer players</p>
+                                <p class="card-text">@item.Phone</p>
+                                <p class="card-text">@item.Email</p>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</body>
+</html>
