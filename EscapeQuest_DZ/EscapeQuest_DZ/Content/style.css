@@ -5,7 +5,7 @@
 header {
     background-color: #000000d9;
     height: 80px;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     padding-top: 20px;
     border-bottom-width: 5px;
     border-bottom-color: #4e4e4e;
@@ -14,9 +14,8 @@ header {
 }
 
 header img {
-    width:120px;
-    height:120px;
-    border-radius:50%;
+    width:140px;
+    height:140px;
     background-color:black;
     box-shadow: 0 0 10px 2px #333232;
     border-bottom-width: 5px;
@@ -41,12 +40,50 @@ header a:hover {
 }
 
 .card {
-    height:250px;
-    width:100%;
+    width: 100%;
+    height:400px !important;
+    background-repeat:no-repeat;
+    background-size:auto;
+    background-color:transparent !important;
+    margin:15px !important;
+}
+
+.colored {
+    background-color: #0000008c;
+    width: 70%;
+    height: auto;  
+    margin: 0 auto;
+    margin-left: 100px;
+    color: #e6e6e6;
+    font-size:18px;
+}
+
+.colored {
+    padding:30px;
+}
+
+.colored img {
+    box-shadow: 0 0 4px 1px black;
+}
+
+
+.card:hover {
+    cursor: pointer;
+}
+
+.mini-img {
+    height:70px;
+    width:70px;
+    margin:10px
+}
+
+.mini-img:hover {
+    border:3px solid white;
+    transform:scale(1.1);
 }
 
 .row {
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 .widths {
@@ -106,4 +143,18 @@ footer img {
 
 .different a:hover {
     color:whitesmoke;
+}
+
+
+.desc {
+    background-color: #d2d0d0b8;
+    color: #000000b8;
+    margin-bottom:10px;
+    height:auto;
+    padding:40px;
+/*    color: white;*/
+
+}
+.margin p {
+    margin:10px;
 }

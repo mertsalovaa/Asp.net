@@ -16,17 +16,13 @@
             <div class="row">
                 @foreach (EscapeQuest item in ViewBag.Rooms)
                 {
-                    <div class="col-sm-8">
-                        <div class="card bg-dark text-white d-flex justify-content-end" style="height: 202px; margin-bottom:20px">
-                            <img class="card-img" src="..." alt="EscapeRoom image">
-                            <div class="card-img-overlay">
-                                <h5 class="card-title">@item.Name</h5>
-                                <p class="card-text">@item.CountPlayer players</p>
-                                <p class="card-text">@item.Phone</p>
-                                <p class="card-text">@item.Email</p>
-                            </div>
+                <div class="col-sm-8" >
+                    <div class="card bg-dark text-white d-flex justify-content-end" style="background-image:url(@item.Galleries.First().Image)" onclick="go(@item.Id)">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">@item.Name</h5>
                         </div>
                     </div>
+                </div>
                 }
             </div>
         </div>

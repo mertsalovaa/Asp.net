@@ -13,7 +13,9 @@ namespace EscapeQuest_DZ.Models
         [Required]
         public string Image { get; set; }
 
+        public string RoomName { get; set; }
+
         /*Navigation Properties*/
-        public EscapeQuest EscapeQuest { get; set; }
+        public virtual EscapeQuest EscapeQuest { get; set; }
     }
 }

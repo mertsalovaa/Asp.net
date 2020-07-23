@@ -1,6 +1,6 @@
 ﻿
 @{
-    Layout = null;
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <!DOCTYPE html>
@@ -11,7 +11,57 @@
     <title>Details</title>
 </head>
 <body>
-    <div> 
+    <div class="colored">
+        <div class="container justify-content-center align-items-center">
+            <img class="w-75 p-3 text-center " id="main-img" src="@ViewBag.Detail.Galleries[1].Image" alt="@ViewBag.Detail.Galleries[1]" />
+            <h2>@ViewBag.Detail.Name</h2>
+            <div class="row">
+                @foreach (var item in ViewBag.Detail.Galleries)
+                {
+
+                    <img class="mini-img" src="@item.Image" onclick="ViewPhoto('@item.Image')" />
+                }
+            </div>
+            <div class="row">
+                <div class="col margin">
+                    <p>
+                        <span>
+                            Rating:
+                            @for (int i = 0; i < @ViewBag.Detail.Rating; i++)
+                            {
+                                <i style="color:yellow" class="fas fa-star"></i>
+                            }
+                        </span>
+                    </p>
+                    <p>Players: @ViewBag.Detail.CountPlayer</p>
+                    <p>Min age: @ViewBag.Detail.MinAge</p>
+
+                </div>
+                <div class="col margin">
+                    <p onclick="ShowMap(@ViewBag.Detail.Address.Lat, @ViewBag.Detail.Address.Lng)"><i class="fas fa-map-marker-alt"></i> @ViewBag.Detail.Address.Street , @ViewBag.Detail.Address.City</p>
+                    <p><i class="fas fa-phone-alt"></i> @ViewBag.Detail.Phone</p>
+                    <p><i class="far fa-envelope"></i> @ViewBag.Detail.Email</p>
+                </div>
+            </div>
+            <div class="row desc">
+                <div class="col">
+                    <h3 style="color:black">Game description </h3>
+                    <br />
+                    <br />
+                    <h5> @ViewBag.Detail.Desc</h5>
+                </div>
+            </div>
+            <div id="map"></div>
+            <div class="row margin justify-content-between">
+                <p><i class="fas fa-spider"></i> Fear: @ViewBag.Detail.LevelFear level</p>
+                <p><i class="fas fa-signal"></i> Difficulty: @ViewBag.Detail.LevelDifficulty level</p>
+            </div>
+            <div class="row justify-content-center" style="margin-top:20px">
+                <p>PRICE: @ViewBag.Detail.Price UAN</p>
+            </div>
+        </div>
     </div>
+
+    <script src="~/Scripts/scriptDetails.js"></script>
 </body>
 </html>

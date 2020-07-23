@@ -16,11 +16,11 @@ namespace EscapeQuest_DZ.Models
         [Key]
         public int Id { get; set; }
         [Required]
-        public string Country { get; set; }
-        [Required]
         public string City { get; set; }
         [Required]
         public string Street { get; set; }
+        public string Lat { get; set; }
+        public string Lng { get; set; }
 
         /*Navigation Properties*/
         public ICollection<EscapeQuest> EscapeQuests { get; set; }

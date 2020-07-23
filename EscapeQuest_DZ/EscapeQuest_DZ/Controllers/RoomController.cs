@@ -17,5 +17,23 @@ namespace EscapeQuest_DZ.Controllers
             ViewBag.Rooms = rooms;
             return View();
         }
+
+        public ActionResult Details(int id)
+        {
+            var rooms = dbContext.EscapeQuests.ToList();
+            ViewBag.Detail = rooms.FirstOrDefault(r => r.Id == id);
+            return View();
+        }
+
+        public ActionResult Search(string name)
+        {
+            var rooms = dbContext.EscapeQuests.Where(r => r.Name.Contains(name)).ToList();
+            if (rooms.Count == 0)
+            {
+                return View("Error");
+            }
+            ViewBag.SearchedRooms = rooms;
+            return View();
+        }
     }
 }

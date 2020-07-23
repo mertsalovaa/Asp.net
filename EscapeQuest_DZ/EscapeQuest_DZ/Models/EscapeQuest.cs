@@ -12,7 +12,7 @@ namespace EscapeQuest_DZ.Models
         {
             Galleries = new List<Gallery>();
         }
-        
+
         [Key]
         public int Id { get; set; }
         [Required]
@@ -32,7 +32,8 @@ namespace EscapeQuest_DZ.Models
         public string Email { get; set; }
 
         /*Navigation Properties*/
-        public Address Address { get; set; }
-        public ICollection<Gallery> Galleries { get; set; }
+        public virtual Address Address { get; set; }
+        public virtual ICollection<Gallery> Galleries { get; set; }
+        //public Gallery Gallery { get; set; }
     }
 }

@@ -10,15 +10,20 @@
 </head>
 <body>
     <header class="text-center d-flex justify-content-around align-content-around">
-        <ul>
-            @foreach (EscapeQuest item in ViewBag.Rooms)
-            {
-                <li value="@item.Name">
-                    <a href="/Room/Index/@item.Name">@item.Name</a>
-                </li>
-            }
-        </ul>
-        <img src="~/Image/logo1.jpg" />
+        @*<ul>
+                @foreach (EscapeQuest item in ViewBag.Rooms)
+                {
+                    <li>
+                        <a href="/Room/Index/@item.Name">@item.Name</a>
+                    </li>
+                }
+            </ul>*@
+        <button type="button" class="btn btn-outline-dark text-center" style="margin-bottom:10px" onclick="goMainPage()">Show all games</button>
+        <div>
+            <input id="searchInput" class="form-control form-control-dark" type="text" placeholder="Search" aria-label="Search">
+            <a class="btn btn-dark text-white" onclick="goSearch()">Search</a>
+        </div>
+        <img class="rounded-circle" src="~/Image/logo1.jpg" />
     </header>
 
     <div>
@@ -43,5 +48,6 @@
     <script src="~/Scripts/popper.min.js"></script>
     <script src="~/Scripts/bootstrap.js"></script>
     <script src="https://kit.fontawesome.com/39c9a805b6.js" crossorigin="anonymous"></script>
+    <script src="~/Scripts/script.js"></script>
 </body>
 </html>

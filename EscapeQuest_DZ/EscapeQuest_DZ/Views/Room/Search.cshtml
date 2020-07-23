@@ -1,0 +1,22 @@
+﻿@using EscapeQuest_DZ.Models;
+@{
+    ViewBag.Title = "Search";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="widths">
+    <div class="container">
+        <div class="row">
+            @foreach (var item in ViewBag.SearchedRooms)
+            {
+                <div class="col-sm-8">
+                    <div class="card bg-dark text-white d-flex justify-content-end" style="background-image:url(@item.Galleries[0].Image)" onclick="go(@item.Id)">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">@item.Name</h5>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
