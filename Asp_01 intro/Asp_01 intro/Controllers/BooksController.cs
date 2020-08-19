@@ -25,10 +25,16 @@ namespace Asp_01_intro.Controllers
             //};
         }
 
-        public ActionResult Index()
+        public ActionResult Index(string genre)
         {
+            SetGenres();
             var books = dbContext.Books.ToList();
-            ViewBag.Books = books;
+            if (genre == "All")
+                ViewBag.Books = books;
+            else
+            {
+                ViewBag.Books = books.Where(x => x.Genre.Name == genre).ToList();
+            }
             return View();
         }
 
@@ -36,9 +42,16 @@ namespace Asp_01_intro.Controllers
         // localhost:1324/Books/Details
         public ActionResult Details(int id)
         {
+            SetGenres();
             var books = dbContext.Books.ToList();
             ViewBag.Detail = books.FirstOrDefault(x => x.Id == id);
             return View();
         }
+
+        private void SetGenres()
+        {
+            ViewBag.Genres = dbContext.Genres.ToList();
+        }
     }
+
 }
