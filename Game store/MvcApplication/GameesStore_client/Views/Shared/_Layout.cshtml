@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    @{
+        Html.RenderPartial("Header");
+    }
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+    @{
+        Html.RenderPartial("Footer");
+    }
+
+    <script src="~/Scripts/jquery-3.0.0.js"></script>
+    <script src="~/Scripts/popper.min.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/custom/script.js"></script>
+    <script src="https://kit.fontawesome.com/39c9a805b6.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+﻿@model GameesStore_client.Models.GameViewModel
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <hr />
+    <div class="row">
+        <div class="col-2">
+            <img src="@Html.DisplayFor(model => model.Image)" alt="" />
+        </div>
+        <div class="col-2">
+            <h1>@Html.DisplayFor(model => model.Name)</h1>
+            <p>@Html.DisplayFor(model => model.Year)</p>
+
+            <div class="row">
+                <div class="col margin">
+                    <p>
+                        <span>
+                            @{int rating = Convert.ToInt32(Html.DisplayFor(model => model.Rating).ToString()); }
+                            @for (int i = 0; i < rating; i++)
+                            {
+                                <i style="color:#f1f154" class="fas fa-star"></i>
+                            }
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="info-box hover-zoom-effect">
+                    <div class="icon bg-pink">
+                        <i class="material-icons">email</i>
+                    </div>
+                    <div class="content">
+                        <div class="text">MESSAGES</div>
+                        <div class="number">15</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <dt>
+        @Html.DisplayNameFor(model => model.Description)
+    </dt>
+
+    <dd>
+        @Html.DisplayFor(model => model.Description)
+    </dd>
+
+    <dt>
+        @Html.DisplayNameFor(model => model.Price)
+    </dt>
+
+    <dd>
+        @Html.DisplayFor(model => model.Price)
+    </dd>
+
+    <dt>
+        @Html.DisplayNameFor(model => model.Image)
+    </dt>
+
+    <dd>
+
+    </dd>
+
+    <dt>
+        @Html.DisplayNameFor(model => model.Genre)
+    </dt>
+
+    <dd>
+        @Html.DisplayFor(model => model.Genre)
+    </dd>
+
+    <dt>
+        @Html.DisplayNameFor(model => model.Developer)
+    </dt>
+
+    <dd>
+        @Html.DisplayFor(model => model.Developer)
+    </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

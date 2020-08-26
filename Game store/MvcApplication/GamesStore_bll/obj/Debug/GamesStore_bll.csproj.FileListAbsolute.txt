@@ -1,0 +1,15 @@
+E:\Академія\4 semestr\Asp_net\Classwork\Game store\MvcApplication\GamesStore_bll\bin\Debug\GamesStore_bll.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Game store\MvcApplication\GamesStore_bll\bin\Debug\GamesStore_bll.pdb
+E:\Академія\4 semestr\Asp_net\Classwork\Game store\MvcApplication\GamesStore_bll\bin\Debug\Binbin.Linq.PredicateBuilder.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Game store\MvcApplication\GamesStore_bll\bin\Debug\GamesStore_dal.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Game store\MvcApplication\GamesStore_bll\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Game store\MvcApplication\GamesStore_bll\bin\Debug\EntityFramework.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Game store\MvcApplication\GamesStore_bll\bin\Debug\GamesStore_dal.pdb
+E:\Академія\4 semestr\Asp_net\Classwork\Game store\MvcApplication\GamesStore_bll\bin\Debug\GamesStore_dal.dll.config
+E:\Академія\4 semestr\Asp_net\Classwork\Game store\MvcApplication\GamesStore_bll\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+E:\Академія\4 semestr\Asp_net\Classwork\Game store\MvcApplication\GamesStore_bll\bin\Debug\EntityFramework.xml
+E:\Академія\4 semestr\Asp_net\Classwork\Game store\MvcApplication\GamesStore_bll\obj\Debug\GamesStore_bll.csprojAssemblyReference.cache
+E:\Академія\4 semestr\Asp_net\Classwork\Game store\MvcApplication\GamesStore_bll\obj\Debug\GamesStore_bll.csproj.CoreCompileInputs.cache
+E:\Академія\4 semestr\Asp_net\Classwork\Game store\MvcApplication\GamesStore_bll\obj\Debug\GamesStore_bll.csproj.CopyComplete
+E:\Академія\4 semestr\Asp_net\Classwork\Game store\MvcApplication\GamesStore_bll\obj\Debug\GamesStore_bll.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Game store\MvcApplication\GamesStore_bll\obj\Debug\GamesStore_bll.pdb

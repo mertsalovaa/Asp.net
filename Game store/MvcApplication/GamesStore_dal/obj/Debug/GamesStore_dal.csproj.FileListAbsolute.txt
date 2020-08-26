@@ -1,0 +1,12 @@
+E:\Академія\4 semestr\Asp_net\Classwork\Game store\MvcApplication\GamesStore_dal\bin\Debug\GamesStore_dal.dll.config
+E:\Академія\4 semestr\Asp_net\Classwork\Game store\MvcApplication\GamesStore_dal\bin\Debug\GamesStore_dal.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Game store\MvcApplication\GamesStore_dal\bin\Debug\GamesStore_dal.pdb
+E:\Академія\4 semestr\Asp_net\Classwork\Game store\MvcApplication\GamesStore_dal\bin\Debug\EntityFramework.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Game store\MvcApplication\GamesStore_dal\bin\Debug\EntityFramework.SqlServer.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Game store\MvcApplication\GamesStore_dal\bin\Debug\EntityFramework.xml
+E:\Академія\4 semestr\Asp_net\Classwork\Game store\MvcApplication\GamesStore_dal\bin\Debug\EntityFramework.SqlServer.xml
+E:\Академія\4 semestr\Asp_net\Classwork\Game store\MvcApplication\GamesStore_dal\obj\Debug\GamesStore_dal.csprojAssemblyReference.cache
+E:\Академія\4 semestr\Asp_net\Classwork\Game store\MvcApplication\GamesStore_dal\obj\Debug\GamesStore_dal.csproj.CoreCompileInputs.cache
+E:\Академія\4 semestr\Asp_net\Classwork\Game store\MvcApplication\GamesStore_dal\obj\Debug\GamesStore_dal.csproj.CopyComplete
+E:\Академія\4 semestr\Asp_net\Classwork\Game store\MvcApplication\GamesStore_dal\obj\Debug\GamesStore_dal.dll
+E:\Академія\4 semestr\Asp_net\Classwork\Game store\MvcApplication\GamesStore_dal\obj\Debug\GamesStore_dal.pdb

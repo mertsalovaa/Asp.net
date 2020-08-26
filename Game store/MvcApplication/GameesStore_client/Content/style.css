@@ -1,0 +1,131 @@
+﻿header ul li {
+    list-style: none;
+    margin-right: 13px;
+}
+
+.logo {
+    width: 150px;
+    height: 60px;
+}
+
+header {
+    background-color: #ffffff;
+    width: 100%;
+    margin: 0 auto;
+    height: 100px;
+}
+
+.header-one {
+    background-color: #FBD4CA;
+    padding-top: 10px;
+    margin: 0 auto;
+    height: 25px;
+    width: 100%;
+}
+
+.header-two {
+    width: 100%;
+    height: 74%;
+    background-color: #F6BBAA;
+}
+
+    .header-two ul li {
+        color: #AD485B;
+        cursor: pointer;
+        margin-top: 30px;
+        font-weight: 400;
+    }
+
+        .header-two ul li:hover {
+            color: #953144;
+            font-weight: bold;
+        }
+
+        .header-two ul li p:hover {
+            border-bottom: 2px solid #6D2431;
+        }
+
+body {
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+}
+
+.field-validation-error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    display: block;
+}
+
+.title {
+    font-family: 'Architects Daughter', cursive;
+    color: #B969C0;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.button {
+    margin-top: 30px;
+}
+
+.card {
+    box-shadow: 0 0 6px 0px #c34980b8;
+    margin: 15px;
+    background-color: #fff6fa5c;
+}
+
+.btn-edit {
+    background-color: #6f42c1;
+    color: white;
+}
+
+.btn-details {
+    background-color: #F6BBAA;
+    color: white;
+}
+
+.btn-delete {
+    background-color: #E049CB;
+    color: white;
+}
+
+.my-margin {
+    margin: 5px;
+}
+
+footer {
+    background-color: #522b9a;
+    padding: 20px;
+}
+
+.colored-li {
+    color: #bd4bdaf5 !important;
+}
+
+#burger {
+    color: #8A66CD;
+    border: 1.5px solid rgb(142, 86, 195);
+    outline: none;
+}
+
+#burger:hover {
+    color: #654B96;
+    border: 1.5px solid rgb(115, 69, 157);
+}
+
+.container {
+    width: 90%;
+}
+
+#sidebarMenu {
+    background-color: rgb(255 126 237 / 14%) !important;
+    box-shadow: rgb(190 3 164 / 68%) 0px 0px 5px;
+}
