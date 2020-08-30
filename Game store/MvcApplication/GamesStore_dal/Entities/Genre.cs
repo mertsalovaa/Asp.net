@@ -17,9 +17,12 @@ namespace GamesStore_dal.Entities
         public int Id { get; set; }
         [Required]
         public string Name { get; set; }
+        [Required]
+        public string Description { get; set; }
+        [Required]
+        public string Image { get; set; }
 
         // Navigation props
-
         public ICollection<Game> Games { get; set; }
 
     }

@@ -9,16 +9,19 @@
 
 <div>
     <hr />
-    <div class="row">
-        <div class="col-2">
-            <img src="@Html.DisplayFor(model => model.Image)" alt="" />
-        </div>
-        <div class="col-2">
-            <h1>@Html.DisplayFor(model => model.Name)</h1>
-            <p>@Html.DisplayFor(model => model.Year)</p>
 
+    <div class="row d-flex justify-content-around text-left">
+        <div class="col">
+            <img style="width: 450px;" src="@Html.DisplayFor(model => model.Image)" alt="" />
+        </div>
+        <div class="col">
+            <h1>@Html.DisplayFor(model => model.Name)</h1>
+            <h5><strong>@Html.DisplayFor(model => model.Genre)</strong></h5>
+            <h5><small>@Html.DisplayFor(model => model.Developer)</small></h5>
+            <h6>@Html.DisplayFor(model => model.Price) grn</h6>
+            <p><small>@Html.DisplayFor(model => model.Year)</small></p>
             <div class="row">
-                <div class="col margin">
+                <div class="col">
                     <p>
                         <span>
                             @{int rating = Convert.ToInt32(Html.DisplayFor(model => model.Rating).ToString()); }
@@ -30,66 +33,29 @@
                     </p>
                 </div>
             </div>
-
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <div class="info-box hover-zoom-effect">
-                    <div class="icon bg-pink">
-                        <i class="material-icons">email</i>
-                    </div>
-                    <div class="content">
-                        <div class="text">MESSAGES</div>
-                        <div class="number">15</div>
-                    </div>
-                </div>
-
-            </div>
         </div>
     </div>
 
-
-    <dt>
-        @Html.DisplayNameFor(model => model.Description)
-    </dt>
-
-    <dd>
-        @Html.DisplayFor(model => model.Description)
-    </dd>
-
-    <dt>
-        @Html.DisplayNameFor(model => model.Price)
-    </dt>
-
-    <dd>
-        @Html.DisplayFor(model => model.Price)
-    </dd>
-
-    <dt>
-        @Html.DisplayNameFor(model => model.Image)
-    </dt>
-
-    <dd>
-
-    </dd>
-
-    <dt>
-        @Html.DisplayNameFor(model => model.Genre)
-    </dt>
-
-    <dd>
-        @Html.DisplayFor(model => model.Genre)
-    </dd>
-
-    <dt>
-        @Html.DisplayNameFor(model => model.Developer)
-    </dt>
-
-    <dd>
-        @Html.DisplayFor(model => model.Developer)
-    </dd>
-
-    </dl>
+    <div>
+        <br />
+        <hr />
+        <h3>@Html.DisplayNameFor(model => model.Description)</h3>
+        <p>@Html.DisplayFor(model => model.Description)</p>
+        <hr />
+        <br />
+    </div>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
-    @Html.ActionLink("Back to List", "Index")
+<p class="row">
+    @using (Html.BeginForm("Edit", "Games", new { Id = Model.Id }, FormMethod.Post))
+    {
+        <input type="submit" value="Edit" class="btn btn-edit my-margin" />
+    }
+    @using (Html.BeginForm("Back to List", "Index", new { Id = Model.Id }, FormMethod.Post))
+    {
+        <input type="submit" value="BackToList" class="btn btn-delete my-margin" />
+    }
 </p>
+
+<button type="button" class="btn btn-secondary">
+    @Html.ActionLink("Back", "Index")
+</button>

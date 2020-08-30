@@ -1,0 +1,63 @@
+﻿@model GameesStore_client.Models.RegisterViewModel
+
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Register</h2>
+
+<div class="container mt-4 h-100 my-margin">
+    <div class="d-flex justify-content-center h-100">
+        <div class="user_card">
+            <div class="container h-100">
+                <div class="d-flex justify-content-center h-100">
+                    <div class="user_card">
+
+                        <div class="d-flex justify-content-center form_container">
+                            <form method="post" action="/Auth/Register" class="d-flex flex-column">
+                                <label class="d-block">
+                                    <p class="label-txt font-weight-bold">ENTER YOUR EMAIL</p>
+                                    <input type="text" name="Email" class="input w-100">
+                                    <div class="line-box">
+                                        <div class="line"></div>
+                                    </div>
+                                </label>
+                                <label class="d-block">
+                                    <p class="label-txt font-weight-bold">ENTER YOUR NAME</p>
+                                    <input type="text" name="Login" class="input w-100">
+                                    <div class="line-box">
+                                        <div class="line"></div>
+                                    </div>
+                                </label>
+                                <label class="d-block">
+                                    <p class="label-txt font-weight-bold">ENTER YOUR PASSWORD</p>
+                                    <input type="password" name="Password" class="input w-100">
+                                    <div class="line-box">
+                                        <div class="line"></div>
+                                    </div>
+                                </label>
+                                <label class="d-block">
+                                    <p class="label-txt font-weight-bold">ENTER YOUR PASSWORD CONFIRM</p>
+                                    <input type="password" name="Confirm" class="input w-100">
+                                    <div class="line-box">
+                                        <div class="line"></div>
+                                    </div>
+                                </label>
+                                <button class="btn btn-details" type="submit">submit</button>
+                            </form>
+                        </div>
+
+                            <div class="mt-4">
+                                <div class="d-flex row justify-content-center links">
+                                    Already have an account?
+                                    <a href="/Auth/Login" class="ml-2">Sign In</a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

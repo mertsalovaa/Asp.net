@@ -17,5 +17,6 @@ namespace GamesStore_bll.Services.Abstraction
         void AddGame(Game game);
         void UpdateGame(Game model);
         void Delete(int id);
+        ICollection<Game> Search(string searchName);
     }
 }

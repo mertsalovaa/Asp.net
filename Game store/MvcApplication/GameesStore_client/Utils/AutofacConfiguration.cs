@@ -27,6 +27,9 @@ namespace GameesStore_client.Utils
             builder.RegisterGeneric(typeof(ApplicationRepository<>)).As(typeof(IGenericRepository<>));
             builder.RegisterType<GameService>().As<IGameService>();
 
+            builder.RegisterType<DeveloperService>().As<IDeveloperService>();
+            builder.RegisterType<GenreService>().As<IGenreService>();
+
             // Register mapper
             var mapperConfig = new MapperConfiguration(config => config.AddProfile(new AutomapperConfig()));
             builder.RegisterInstance<IMapper>(mapperConfig.CreateMapper());

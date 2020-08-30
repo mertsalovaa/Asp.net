@@ -25,7 +25,7 @@ namespace GameesStore_client.Controllers
 
 
         // GET: Games
-        public ActionResult Index(string search, string type, string name)
+        public ActionResult Index(string type, string name)
         {
             SetFilters();
             ICollection<Game> games = null;
@@ -59,10 +59,9 @@ namespace GameesStore_client.Controllers
             //    });
             //} 
             #endregion
-
         }
         [HttpGet]
-        private ActionResult Filter(string type, string name)
+        public ActionResult Filter(string type, string name)
         {
             ICollection<Game> games = null;
             if (type != null && name != null)
@@ -143,6 +142,8 @@ namespace GameesStore_client.Controllers
         [HttpGet]
         public ActionResult Edit(int id)
         {
+            SetFilters();
+
             var found = gameService.GetAllGames().FirstOrDefault(x => x.Id == id);
             var game = mapper.Map<GameViewModel>(found);
             return View(game);
@@ -173,13 +174,19 @@ namespace GameesStore_client.Controllers
             return View(game);
         }
 
-        [HttpPost]
         public ActionResult Search(string name)
         {
-            var search = gameService.GetAllGames().Where(x => x.Name.Contains(name));
-            var games = mapper.Map<GameViewModel>(search);
-
-            return RedirectToAction("Index", games);
+            SetFilters();
+            var games = gameService.Search(name);
+            if (games.Count > 0)
+            {
+                var model = mapper.Map<ICollection<GameViewModel>>(games);
+                return RedirectToAction("Index", "Games", model);
+            }
+            else
+            {
+                return RedirectToAction("Index", "Games", gameService.GetAllGames());
+            }
         }
     }
 }

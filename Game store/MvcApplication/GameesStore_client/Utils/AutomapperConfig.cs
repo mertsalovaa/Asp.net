@@ -20,6 +20,12 @@ namespace GameesStore_client.Utils
             CreateMap<GameViewModel, Game>()
                 .ForMember(x => x.Developer, opt => opt.MapFrom(z => new Developer { Company = z.Developer }))
                 .ForMember(x => x.Genre, opt => opt.MapFrom(z => new Genre { Name = z.Genre }));
+
+            CreateMap<Developer, DeveloperViewModel>();
+            CreateMap<DeveloperViewModel, Developer>();
+
+            CreateMap<Genre, GenreViewModel>();
+            CreateMap<GenreViewModel, Genre>();
         }
     }
 }
