@@ -5,9 +5,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Register</h2>
-
-<div class="container mt-4 h-100 my-margin">
+<div class="container mt-4 h-100 w-100 d-flex align-items-center justify-content-center p-5 m-5" style="background-color: rgb(228, 228, 228);box-shadow: 0 0 6px #8e8e8e;">
     <div class="d-flex justify-content-center h-100">
         <div class="user_card">
             <div class="container h-100">
@@ -15,49 +13,46 @@
                     <div class="user_card">
 
                         <div class="d-flex justify-content-center form_container">
-                            <form method="post" action="/Auth/Register" class="d-flex flex-column">
-                                <label class="d-block">
-                                    <p class="label-txt font-weight-bold">ENTER YOUR EMAIL</p>
-                                    <input type="text" name="Email" class="input w-100">
-                                    <div class="line-box">
-                                        <div class="line"></div>
+                            <form method="post" action="~/Views/Auth/Register.cshtml">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i class="fas fa-at"></i></span>
                                     </div>
-                                </label>
-                                <label class="d-block">
-                                    <p class="label-txt font-weight-bold">ENTER YOUR NAME</p>
-                                    <input type="text" name="Login" class="input w-100">
-                                    <div class="line-box">
-                                        <div class="line"></div>
+                                    <input type="text" name="Email" class="form-control input_user" value="Email" placeholder="email">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i class="fas fa-user"></i></span>
                                     </div>
-                                </label>
-                                <label class="d-block">
-                                    <p class="label-txt font-weight-bold">ENTER YOUR PASSWORD</p>
-                                    <input type="password" name="Password" class="input w-100">
-                                    <div class="line-box">
-                                        <div class="line"></div>
+                                    <input type="text" name="Login" class="form-control input_user" value="Login" placeholder="username">
+                                </div>
+                                <div class="input-group mb-2">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i class="fas fa-key"></i></span>
                                     </div>
-                                </label>
-                                <label class="d-block">
-                                    <p class="label-txt font-weight-bold">ENTER YOUR PASSWORD CONFIRM</p>
-                                    <input type="password" name="Confirm" class="input w-100">
-                                    <div class="line-box">
-                                        <div class="line"></div>
+                                    <input type="password" name="Password" class="form-control input_pass" value="Password" placeholder="password">
+                                </div>
+                                <div class="input-group mb-2">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i class="fas fa-key"></i></span>
                                     </div>
-                                </label>
-                                <button class="btn btn-details" type="submit">submit</button>
+                                    <input type="password" name="Confirm password" class="form-control input_pass" value="Confirm password" placeholder="confirm password">
+                                </div>
+                                <div class="d-flex justify-content-center mt-3 login_container">
+                                    <button type="button" name="button" class="btn btn-details login_btn">Sign In</button>
+                                </div>
                             </form>
                         </div>
 
-                            <div class="mt-4">
-                                <div class="d-flex row justify-content-center links">
-                                    Already have an account?
-                                    <a href="/Auth/Login" class="ml-2">Sign In</a>
-                                </div>
+                        <div class="mt-4">
+                            <div class="d-flex justify-content-center links row">
+                                Already have account? <a href="/Auth/Login" class="ml-2">Sign Up</a>
                             </div>
+                        </div>
                     </div>
                 </div>
-
             </div>
+
         </div>
     </div>
 </div>

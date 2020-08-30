@@ -4,9 +4,17 @@
     <div class="d-flex justify-content-between">
         <div class="row">
             <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse show" style="">
-                <button class="btn btn-outline-danger button">
-                    @Html.ActionLink("Create new game", "Create")
-                </button>
+                <div class="d-flex justify-content-around align-items-center">
+                    <button class="btn btn-outline-danger button">
+                        @Html.ActionLink("Create new game", "Create")
+                    </button>
+
+                    <button style="outline:none;background-color:transparent;border:none;">
+                        <a href="/Auth/Login" >
+                            <i class="fas fa-sign-in-alt" style="font-size:25px;height:25px;line-height:25px;color:rgb(157, 85, 157)"></i>
+                        </a>
+                    </button>
+                </div>
                 <div class="sidebar-sticky pt-3">
                     <div class="col">
                         <ul class="nav flex-column">
@@ -42,7 +50,7 @@
                     <form style="margin-top: 20px">
                         <input type="text" id="searchName" name="name" class="form-control" placeholder="Enter search game">
                         <br />
-                        <button class="btn btn-edit" onclick="goSearch()"></button>
+                        <button class="btn btn-edit" onclick="goSearch()">Search</button>
                     </form>
                     <br />
                 </div>
