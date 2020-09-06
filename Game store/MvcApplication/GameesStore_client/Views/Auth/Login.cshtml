@@ -1,9 +1,11 @@
-﻿@model GameesStore_client.Models.LoginViewModel
-
+﻿@using System.Web.Optimization;
+@model GameesStore_client.Models.LoginViewModel
 @{
     ViewBag.Title = "Login";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
+@Styles.Render("`~/Content/customForLogin")
 
 <div class="container mt-4 h-100 w-100 d-flex align-items-center justify-content-center p-5 m-5" style="background-color: rgb(228, 228, 228);box-shadow: 0 0 6px #8e8e8e;">
     <div class="d-flex justify-content-center h-100">
@@ -12,7 +14,7 @@
                 <div class="d-flex justify-content-center h-100">
                     <div class="user_card">
                         <div class="d-flex justify-content-center form_container">
-                            <form method="post" action="~/Views/Auth/Login.cshtml" >
+                            <form method="post" action="/Auth/Login" >
                                 <div class="input-group mb-3">
                                     <div class="input-group-append">
                                         <span class="input-group-text"><i class="fas fa-user"></i></span>
@@ -26,7 +28,7 @@
                                     <input type="password" name="Password" class="form-control input_pass" value="Password" placeholder="password">
                                 </div>
                                 <div class="d-flex justify-content-center mt-3 login_container">
-                                    <button type="button" name="button" class="btn btn-details login_btn">Login</button>
+                                    <button type="submit" name="button" class="btn btn-details login_btn">Login</button>
                                 </div>
                             </form>
                         </div>

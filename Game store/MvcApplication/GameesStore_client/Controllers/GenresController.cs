@@ -25,7 +25,7 @@ namespace GameesStore_client.Controllers
         public ActionResult Index()
         {
             var genre = genreService.GetAllGenres();
-            var model = mapper.Map<ICollection<DeveloperViewModel>>(genre);
+            var model = mapper.Map<ICollection<GenreViewModel>>(genre);
             return View(model);
         }
         [HttpGet]
@@ -35,7 +35,7 @@ namespace GameesStore_client.Controllers
         }
 
         [HttpPost]
-        public ActionResult Create(DeveloperViewModel genre)
+        public ActionResult Create(GenreViewModel genre)
         {
             if (ModelState.IsValid)
             {

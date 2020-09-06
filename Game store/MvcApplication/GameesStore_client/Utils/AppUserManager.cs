@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNet.Identity;
+﻿using GamesStore_dal.Entities;
+using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
@@ -10,17 +11,17 @@ using System.Web;
 
 namespace GameesStore_client.Utils
 {
-    public class AppUserManager : UserManager<IdentityUser>
+    public class AppUserManager : UserManager<CustomUser>
     {
-        public AppUserManager(IUserStore<IdentityUser> store) : base(store)
+        public AppUserManager(IUserStore<CustomUser> store) : base(store)
         { }
 
         public static AppUserManager Create(IdentityFactoryOptions<AppUserManager> options, IOwinContext owinContext)
         {
             var dbContext = owinContext.Get<DbContext>();
-            var manager = new AppUserManager(new UserStore<IdentityUser>(dbContext));
+            var manager = new AppUserManager(new UserStore<CustomUser>(dbContext));
 
-            manager.UserValidator = new UserValidator<IdentityUser>(manager)
+            manager.UserValidator = new UserValidator<CustomUser>(manager)
             {
                 AllowOnlyAlphanumericUserNames = true,
                 RequireUniqueEmail = true
@@ -38,7 +39,7 @@ namespace GameesStore_client.Utils
             var dataProtectionProvider = options.DataProtectionProvider;
             if(dataProtectionProvider != null)
             {
-                manager.UserTokenProvider = new DataProtectorTokenProvider<IdentityUser>(dataProtectionProvider.Create("Token"));
+                manager.UserTokenProvider = new DataProtectorTokenProvider<CustomUser>(dataProtectionProvider.Create("Token"));
             }
 
             return manager;

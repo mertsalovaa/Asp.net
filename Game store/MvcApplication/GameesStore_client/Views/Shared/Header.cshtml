@@ -16,7 +16,7 @@
                 <span id="span"><i class="fas fa-bars"></i></span>
             </button>
         </nav>
-        <div class="row d-flex align-items-center">
+        <div class="row d-flex align-items-center justify-content-around">
             <img class="logo" src="~/img/logo3.png" />
             <img class="logo-two" style="height: 90px;" src="~/img/logo4.png" />
         </div>
@@ -24,7 +24,7 @@
             <li class="float-right">
                 <div class="col">
                     <i class="fas fa-home"></i>
-                    <p>Home</p>
+                    <a href="/Games/Index"><p>Home</p></a>
                 </div>
             </li>
             <li class="float-right">
@@ -45,6 +45,58 @@
                     <p>Contacts</p>
                 </div>
             </li>
+            @if (Request.IsAuthenticated)
+            {
+                <li>
+                    <div class="basket row" style="margin-top: 15px;color:#50409c;">
+                        <span>Basket</span>
+                        @*<i class="fas fa-shopping-cart"></i>*@
+                        <div class="quantity" style="border-radius:50%;background-color:rgb(229, 79, 79);color:white;width:25px;height:25px;">@ViewBag.CountGames</div>
+                    </div>
+                </li>
+                <li class="float-right">
+                    <div class="col-lg-12 d-flex align-items-center" style="font-size: 19px">
+                        @using (Html.BeginForm("Profile", "Auth", new { Name = User.Identity.Name }, FormMethod.Post))
+                        {
+                            <a class="row d-flex align-items-center" href="/Auth/Profile">
+                                @if (User.Identity.Name == "admin")
+                                {
+                                    <i style="margin-right:5px;color:rgb(229, 229, 0)" class="fas fa-crown"></i>
+                                }
+                                else
+                                {
+                                    <i style="margin-right:5px;color:rgb(229, 229, 0)" class="fas fa-user"></i>
+                                }
+                                <p style="color:rgb(229, 229, 0);;margin-top:10px">@User.Identity.Name</p>
+                            </a>
+                        }
+                    </div>
+                </li>
+                <li>
+                    <div class="col" style="font-size: 25px">
+                        <a href="/Auth/Logout">
+                            <i class="fas fa-sign-out-alt"></i>
+                        </a>
+                    </div>
+                </li>
+            }
+            else
+            {
+                <li class="float-right">
+                    <div class="col" style="font-size: 25px">
+                        <a href="/Auth/Register">
+                            <i class="fas fa-user-plus"></i>
+                        </a>
+                    </div>
+                </li>
+                <li class="float-right">
+                    <div class="col" style="font-size: 25px">
+                        <a href="/Auth/Login">
+                            <i class="fas fa-sign-in-alt"></i>
+                        </a>
+                    </div>
+                </li>
+            }
         </ul>
     </div>
 

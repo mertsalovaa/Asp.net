@@ -1,11 +1,21 @@
 ﻿using AutoMapper;
 using GameesStore_client.Filter;
 using GameesStore_client.Models;
+using GameesStore_client.Utils;
+using GameesStore_client.Utils.Helper;
 using GamesStore_bll.Services.Abstraction;
 using GamesStore_dal.Entities;
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.Owin;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
+using System.Net;
+using System.Net.Http;
+using System.Net.Mime;
 using System.Web;
 using System.Web.Mvc;
 
@@ -14,19 +24,23 @@ namespace GameesStore_client.Controllers
     public class GamesController : Controller
     {
         private readonly IGameService gameService;
+        private readonly ICartService cartService;
         private readonly IMapper mapper;
 
         // #3
-        public GamesController(IGameService _gameService, IMapper _mapper)
+        public GamesController(IGameService _gameService, IMapper _mapper, ICartService _cartService)
         {
             gameService = _gameService;
             mapper = _mapper;
+            cartService = _cartService;
         }
 
 
         // GET: Games
         public ActionResult Index(string type, string name)
         {
+            var manager = HttpContext.GetOwinContext().GetUserManager<AppUserManager>();
+            var user = manager.FindByName(User.Identity.Name);
             SetFilters();
             ICollection<Game> games = null;
             if (type != null && name != null)
@@ -39,7 +53,7 @@ namespace GameesStore_client.Controllers
                 games = gameService.GetAllGames();
             }
             var model = mapper.Map<ICollection<GameViewModel>>(games);
-
+            ViewBag.CountGames = cartService.CountProducts(user.Id);
 
             return View(model);
             #region manual mapping List<Game> => ICollection<GameViewModel>
@@ -115,6 +129,7 @@ namespace GameesStore_client.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "Admin")]
         public ActionResult Create()
         {
             SetFilters();
@@ -129,17 +144,70 @@ namespace GameesStore_client.Controllers
         }
 
         [HttpPost]
-        public ActionResult Create(GameViewModel game)
+        [Authorize(Roles = "Admin")]
+        public ActionResult Create(GameViewModel model, HttpPostedFileBase image)
         {
-            if (ModelState.IsValid)
+            if (image != null && (image.ContentType.Contains("image")))
             {
-                gameService.AddGame(mapper.Map<Game>(game));
+                //
+                if (ModelState.IsValid)
+                {
+                    // 1.jpg
+                    string fileName = Guid.NewGuid().ToString() + ".jpg";
+
+                    string fullPath = Server.MapPath("~/img/") + fileName;
+
+                    var convertedPicture = CustomImageConvertor.ConverrtBitmap(new Bitmap(image.InputStream), 300, 300);
+                    if (convertedPicture != null)
+                    {
+                        convertedPicture.Save(fullPath, ImageFormat.Jpeg);
+                        model.Image = "/img/" + fileName;
+                    }
+                    gameService.AddGame(mapper.Map<Game>(model));
+                    return RedirectToAction("Index");
+                }
+            }
+            if (image == null && model.Image != null)
+            {
+                string fileName = Guid.NewGuid().ToString() + ".jpg";
+                string fullPath = Server.MapPath("~/img/") + fileName;
+                Bitmap convertedPicture;
+                if (!model.Image.StartsWith("http"))
+                {
+                    const string ExpectedImagePrefix = "data:image/png;base64,";
+                    string base64 = model.Image.Substring(ExpectedImagePrefix.Length);
+                    var bytes = Convert.FromBase64String(base64);
+
+                    convertedPicture = CustomImageConvertor.ConverrtBitmap(new Bitmap(new MemoryStream(bytes)), 300, 300);
+                    if (convertedPicture != null)
+                    {
+                        convertedPicture.Save(fullPath, ImageFormat.Jpeg);
+                        model.Image = "/img/" + fileName;
+                    }
+                    gameService.AddGame(mapper.Map<Game>(model));
+                    return RedirectToAction("Index");
+                }
+
+                WebRequest request = WebRequest.Create(model.Image);
+                var responce = request.GetResponse();
+                fileName = Guid.NewGuid().ToString() + ".jpg";
+
+                fullPath = Server.MapPath("~/img/") + fileName;
+                var stream = responce.GetResponseStream();
+                convertedPicture = CustomImageConvertor.ConverrtBitmap(new Bitmap(stream), 300, 300);
+                if (convertedPicture != null)
+                {
+                    convertedPicture.Save(fullPath, ImageFormat.Jpeg);
+                    model.Image = "/img/" + fileName;
+                }
+                gameService.AddGame(mapper.Map<Game>(model));
                 return RedirectToAction("Index");
             }
             return Create();
         }
 
         [HttpGet]
+        [Authorize]
         public ActionResult Edit(int id)
         {
             SetFilters();
@@ -149,6 +217,7 @@ namespace GameesStore_client.Controllers
             return View(game);
         }
 
+        [Authorize]
         [HttpPost]
         public ActionResult Edit(GameViewModel model)
         {
@@ -161,6 +230,7 @@ namespace GameesStore_client.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         public ActionResult Delete(int id)
         {
             gameService.Delete(id);
@@ -176,12 +246,13 @@ namespace GameesStore_client.Controllers
 
         public ActionResult Search(string name)
         {
+            ICollection<Game> games = new List<Game>();
             SetFilters();
-            var games = gameService.Search(name);
+            games = gameService.Search(name);
             if (games.Count > 0)
             {
                 var model = mapper.Map<ICollection<GameViewModel>>(games);
-                return RedirectToAction("Index", "Games", model);
+                return View(model);
             }
             else
             {

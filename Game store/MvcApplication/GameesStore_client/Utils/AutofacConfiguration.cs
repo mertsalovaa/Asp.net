@@ -29,6 +29,7 @@ namespace GameesStore_client.Utils
 
             builder.RegisterType<DeveloperService>().As<IDeveloperService>();
             builder.RegisterType<GenreService>().As<IGenreService>();
+            builder.RegisterType<CartService>().As<ICartService>();
 
             // Register mapper
             var mapperConfig = new MapperConfiguration(config => config.AddProfile(new AutomapperConfig()));

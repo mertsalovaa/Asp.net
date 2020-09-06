@@ -33,17 +33,29 @@
                     </p>
                 </div>
             </div>
+            @if (User.Identity.Name != "admin")
+            {
+                <input type="number" step="1" min="0" max="10" />
+                <br />
+                <br />
+                using (Html.BeginForm("Create", "Cart", new { id = Model.Id }, FormMethod.Post))
+                {
+                    <button class="btn btn-success w-50" type="submit">
+                        <span><i class="fas fa-shopping-cart"></i> Buy</span>
+                    </button>
+                }
+            }
         </div>
     </div>
+</div>
 
-    <div>
-        <br />
-        <hr />
-        <h3>@Html.DisplayNameFor(model => model.Description)</h3>
-        <p>@Html.DisplayFor(model => model.Description)</p>
-        <hr />
-        <br />
-    </div>
+<div>
+    <br />
+    <hr />
+    <h3>@Html.DisplayNameFor(model => model.Description)</h3>
+    <p>@Html.DisplayFor(model => model.Description)</p>
+    <hr />
+    <br />
 </div>
 <p class="row">
     @using (Html.BeginForm("Edit", "Games", new { Id = Model.Id }, FormMethod.Post))

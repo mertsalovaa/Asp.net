@@ -9,6 +9,13 @@ namespace GamesStore_dal.Entities
 {
     public class Game
     {
+
+        public Game()
+        {
+            Orders = new List<Order>();
+            Carts = new List<Cart>();
+        }
+
         [Key]
         public int Id { get; set; }
 
@@ -22,6 +29,7 @@ namespace GamesStore_dal.Entities
 
         [Required]
         public float Price { get; set; }
+        public int Count { get; set; }
 
         [Required]
         [Range(1, 5)]
@@ -35,5 +43,7 @@ namespace GamesStore_dal.Entities
 
         public virtual Genre Genre { get; set; }
         public virtual Developer Developer { get; set; }
+        public virtual ICollection<Order> Orders { get; set; }
+        public virtual ICollection<Cart> Carts { get; set; }
     }
 }

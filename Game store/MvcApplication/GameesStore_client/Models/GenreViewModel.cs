@@ -12,7 +12,7 @@ namespace GameesStore_client.Models
 
         [Display(Name = "Name")]
         [Required(ErrorMessage = "Please, enter name")]
-        public string Company { get; set; }
+        public string Name { get; set; }
 
         [Display(Name = "Description")]
         [Required(ErrorMessage = "Please, enter description")]

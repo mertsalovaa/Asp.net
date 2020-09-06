@@ -1,63 +1,74 @@
 ﻿@model IEnumerable<GameesStore_client.Models.GameViewModel>
+@using System.Web.Optimization;
+
+@Scripts.Render("~/Scripts/customScript")
 
 <div class="container-fluid">
-    <div class="d-flex justify-content-between">
+    @*<div class="d-flex justify-content-between">*@
         <div class="row">
             <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse show" style="">
-                <div class="d-flex justify-content-around align-items-center">
-                    <button class="btn btn-outline-danger button">
-                        @Html.ActionLink("Create new game", "Create")
-                    </button>
 
-                    <button style="outline:none;background-color:transparent;border:none;">
+                <div class="sidebar-sticky pt-3">
+                    <div class="nav flex-column">
+                        <div class="d-flex justify-content-around align-items-center">
+                            @if (User.Identity.Name == "admin")
+                            {
+                                <button class="btn btn-outline-danger button">
+                                    @Html.ActionLink("Create new game", "Create")
+                                </button>
+                            }
+                            @*<button style="outline:none;background-color:transparent;border:none;">
                         <a href="/Auth/Login" >
                             <i class="fas fa-sign-in-alt" style="font-size:25px;height:25px;line-height:25px;color:rgb(157, 85, 157)"></i>
                         </a>
-                    </button>
-                </div>
-                <div class="sidebar-sticky pt-3">
-                    <div class="col">
-                        <ul class="nav flex-column">
-                            @foreach (var item in ViewBag.Developers)
-                            {
-                                <li class="nav-item row d-flex align-items-center">
-                                    <input name="@item" onchange="setDeveloper(event)" type="checkbox" style="margin-right:10px" id="@item" />
-                                    <label for="@item">@item</label>
-                                </li>
-                            }
-                        </ul>
-                        <button class="btn btn-outline-warning button">
-                            @Html.ActionLink("View all developers", "../Developers/Index")
-                        </button>
-                    </div>
+                    </button>*@
+                        </div>
+                        <div class="sidebar-sticky pt-3">
+                            <div class="col">
+                                <ul class="nav flex-column">
+                                    @foreach (var item in ViewBag.Developers)
+                                    {
+                                        <li class="nav-item row d-flex align-items-center">
+                                            <input name="@item" onchange="setDeveloper(event)" type="checkbox" style="margin-right:10px" id="@item" />
+                                            <label for="@item">@item</label>
+                                        </li>
+                                    }
+                                </ul>
+                                <button class="btn btn-outline-warning button">
+                                    @Html.ActionLink("View all developers", "../Developers/Index")
+                                </button>
+                            </div>
 
-                    <hr />
-                    <div class="col">
-                        <ul class="nav flex-column">
-                            @foreach (var item in ViewBag.Genres)
-                            {
-                                <li class="nav-item row d-flex align-items-center">
-                                    <input name="@item" type="checkbox" onchange="setGenre(event)" style="margin-right:10px" id="@item" />
-                                    <label for="@item">@item</label>
-                                </li>
-                            }
-                        </ul>
-                        <button class="btn btn-outline-success button">
-                            @Html.ActionLink("View all genres", "../Genres/Index")
-                        </button>
+                            <hr />
+                            <div class="col">
+                                <ul class="nav flex-column">
+                                    @foreach (var item in ViewBag.Genres)
+                                    {
+                                        <li class="nav-item row d-flex align-items-center">
+                                            <input name="@item" type="checkbox" onchange="setGenre(event)" style="margin-right:10px" id="@item" />
+                                            <label for="@item">@item</label>
+                                        </li>
+                                    }
+                                </ul>
+                                <button class="btn btn-outline-success button">
+                                    @Html.ActionLink("View all genres", "../Genres/Index")
+                                </button>
+                            </div>
+                            <br />
+
+                            <form style="margin-top: 20px">
+                                <input type="text" id="name" name="name" class="form-control" placeholder="Enter search game">
+                                <br />
+                                <a class="btn btn-edit" onclick="goSearch()">Search</a>
+                            </form>
+                            <br />
+                        </div>
                     </div>
-                    <br />
-                    <form style="margin-top: 20px">
-                        <input type="text" id="searchName" name="name" class="form-control" placeholder="Enter search game">
-                        <br />
-                        <button class="btn btn-edit" onclick="goSearch()">Search</button>
-                    </form>
-                    <br />
                 </div>
             </nav>
             @{
                 Html.RenderPartial("Partial/CardPartial");
             }
         </div>
-    </div>
+    @*</div>*@
 </div>

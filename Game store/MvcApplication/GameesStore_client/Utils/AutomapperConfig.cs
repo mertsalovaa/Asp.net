@@ -26,6 +26,18 @@ namespace GameesStore_client.Utils
 
             CreateMap<Genre, GenreViewModel>();
             CreateMap<GenreViewModel, Genre>();
+
+            CreateMap<CustomUser, ProfileViewModel>()
+                .ForMember(x => x.Login, opt => opt.MapFrom(z => z.UserName));
+            //.ForMember(x=>x.Password, opt => opt.MapFrom(z=>z.PasswordHash.ToString()));
+            CreateMap<ProfileViewModel, CustomUser>()
+                 .ForMember(x => x.UserName, opt => opt.MapFrom(z => z.Login));
+
+
+            CreateMap<CustomUser, RegisterViewModel>()
+                .ForMember(x => x.Login, opt => opt.MapFrom(z => z.UserName));
+            CreateMap<RegisterViewModel, CustomUser>()
+                .ForMember(x=>x.UserName, opt => opt.MapFrom(z=>z.Login));
         }
     }
 }

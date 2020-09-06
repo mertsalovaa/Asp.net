@@ -129,3 +129,11 @@ footer {
     background-color: rgb(255 126 237 / 14%) !important;
     box-shadow: rgb(190 3 164 / 68%) 0px 0px 5px;
 }
+
+.counted {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgb(229, 79, 79);
+    color: white;
+}

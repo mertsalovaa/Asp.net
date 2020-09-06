@@ -10,6 +10,10 @@ namespace GameesStore_client.Models
     {
         //[Required(ErrorMessage = "Please, enter login")]
         public string Login { get; set; }
+        public string Name { get; set; }
+        public string Surname { get; set; }
+        public DateTime DateOfBirth { get; set; }
+        //public string Image { get; set; }
         //[Required(ErrorMessage = "Please, enter email")]
         public string Email { get; set; }
         //[Required(ErrorMessage = "Please, enter password")]

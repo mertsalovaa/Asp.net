@@ -83,9 +83,9 @@ namespace GamesStore_bll.Services.Implementation
 
         }
 
-        public ICollection<Game> Search(string searchName)
+        public ICollection<Game> Search(string name)
         {
-            return repo.GetAll().Where(x => x.Name.Contains(searchName)).ToList();
+            return repo.GetAll().Where(x => x.Name.Contains(name)).ToList();
         }
 
         public void UpdateGame(Game model)

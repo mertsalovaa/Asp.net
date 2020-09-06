@@ -5,6 +5,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using System.Web.Optimization;
+using GameesStore_client.App_Start;
 
 namespace GameesStore_client
 {
@@ -15,6 +17,7 @@ namespace GameesStore_client
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             AutofacConfiguration.ConfigurateContainer();
+            BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
     }
 }

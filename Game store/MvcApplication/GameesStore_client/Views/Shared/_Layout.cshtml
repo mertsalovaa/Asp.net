@@ -1,11 +1,11 @@
-﻿<!DOCTYPE html>
+﻿@using System.Web.Optimization;
+<!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="~/Content/style.css" rel="stylesheet" />
-    <link href="~/Content/styleForLogin.css" rel="stylesheet" />
+    @Styles.Render("~/Content/bootrstrapStyles")
+    @Styles.Render("~/Content/customStyles")
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
@@ -13,17 +13,17 @@
     @{
         Html.RenderPartial("Header");
     }
-    <div class="container body-content">
+    @*<div class="container body-content">*@
         @RenderBody()
-    </div>
+    @*</div>*@
     @{
         Html.RenderPartial("Footer");
     }
 
-    <script src="~/Scripts/jquery-3.0.0.js"></script>
-    <script src="~/Scripts/popper.min.js"></script>
-    <script src="~/Scripts/bootstrap.js"></script>
-    <script src="~/Scripts/custom/script.js"></script>
+    @Scripts.Render("~/Scripts/jqueryScripts");
+    @Scripts.Render("~/Scripts/popperScripts");
+    @Scripts.Render("~/Scripts/bootstrapScripts");
+    @Scripts.Render("~/Scripts/customScript");
     <script src="https://kit.fontawesome.com/39c9a805b6.js" crossorigin="anonymous"></script>
 </body>
 </html>

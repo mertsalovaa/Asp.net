@@ -1,0 +1,73 @@
+﻿@model GameesStore_client.Models.ProfileViewModel
+
+@{
+    ViewBag.Title = "Profile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+    <hr />
+    <div class="col-md-10 text-center">
+        @if (Model.Image == null)
+        {
+            <img src="https://capenetworks.com/static/images/testimonials/user-icon.svg" alt="@Html.DisplayFor(model => User.Identity.Name)" class="img-fluid" style="width:50%" />
+        }
+        else
+        {
+            <img src="@Html.DisplayFor(model => model.Image)" alt="@Html.DisplayFor(model => User.Identity.Name)" class="img-fluid" />
+        }
+    </div>
+    <div class="col-md-10">
+        <div class="form-group">
+            @Html.LabelFor(model => model.Login, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-offset-2 col-md-10">
+                <input type="text" disabled value="@Html.DisplayFor(model => User.Identity.Name)" class="form-control disabled" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-offset-2 col-md-10">
+                <input type="text" disabled value="@Html.DisplayFor(model => model.Name)" class="form-control disabled" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Surname, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-offset-2 col-md-10">
+                <input type="text" disabled value="@Html.DisplayFor(model => model.Surname)" class="form-control disabled" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.DateOfBirth, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-offset-2 col-md-10">
+                <input type="text" disabled value="@Html.DisplayFor(model => model.DateOfBirth.Date)" class="form-control disabled" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-offset-2 col-md-10">
+                <input type="text" disabled value="@Html.DisplayFor(model => model.Email)" class="form-control disabled" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-offset-2 col-md-10">
+                <input type="password" disabled value="@Html.DisplayFor(model => model.Password)" class="form-control disabled" />
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="row m-3">
+    <button class="btn btn-edit button" style="margin-right:10px">
+        @Html.ActionLink("Edit", "Edit", "Auth")
+    </button>
+
+    <button type="button" class="btn btn-outline-secondary button">
+        @Html.ActionLink("Back to List", "Index")
+    </button>
+</div>

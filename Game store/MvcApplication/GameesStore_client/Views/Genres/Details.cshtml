@@ -5,44 +5,28 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Details</h2>
+<hr />
+<div style="width:70%; margin:0 auto;">
+    <div class="row d-flex justify-content-around text-left">
+        <div class="col">
+            <img class="img-fluid" style="width: 450px;" src="@Html.DisplayFor(model => model.Image)" alt="" />
+        </div>
+        <div class="col">
+            <h1>@Html.DisplayFor(model => model.Name)</h1>
+            <p class="p-3">@Html.DisplayFor(model => model.Description)</p>
+            <p>
+                @using (Html.BeginForm("Edit", "Genres", new { Id = Model.Id }, FormMethod.Post))
+                {
+                    <input type="submit" value="Edit" class="btn btn-edit my-margin" />
+                }
+            </p>
+        </div>
+    </div>
 
-<div>
-    <h4>GenreViewModel</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Company)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Company)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Description)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Image)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Image)
-        </dd>
-
-    </dl>
+    <button type="button" class="btn btn-secondary">
+        @Html.ActionLink("Back", "Index")
+    </button>
+    <button type="button" class="btn btn-secondary">
+        @Html.ActionLink("Back to Games", "../Games/Index")
+    </button>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
-</p>
-<button type="button" class="btn btn-secondary">
-    @Html.ActionLink("Back", "Index")
-</button>
-<button type="button" class="btn btn-secondary">
-    @Html.ActionLink("Back to Games", "../Games/Index")
-</button>

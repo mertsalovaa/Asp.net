@@ -7,6 +7,16 @@ function setGenre(event) {
 }
 
 function goSearch() {
-    let search = document.querySelector('#searchInput').value;
-    location.href = "Games/Search?name=" + search;
+    location.href = "/Games/Search?name=" + document.querySelector('#name').value;
+}
+
+function setOption(event) {
+    if (event.target.value == "url") {
+        $("#" + event.target.value).removeClass("d-none");
+        $("#comp").addClass("d-none");
+    }
+    else if (event.target.value == "comp") {
+        $("#" + event.target.value).removeClass("d-none");
+        $("#url").addClass("d-none");
+    }
 }

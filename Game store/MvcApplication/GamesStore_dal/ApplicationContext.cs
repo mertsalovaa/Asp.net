@@ -7,16 +7,24 @@ namespace GamesStore_dal
     using System.Data.Entity;
     using System.Linq;
 
-    public class ApplicationContext : IdentityDbContext<IdentityUser>
+    public class ApplicationContext : IdentityDbContext<CustomUser>
     {
         public ApplicationContext() : base("name=ApplicationContext")
         {
-            //Database.SetInitializer(new GameInitializer());
+            Database.SetInitializer(new GameInitializer());
         }
 
         public DbSet<Genre> Genres { get; set; }
         public DbSet<Developer> Developers { get; set; }
         public DbSet<Game> Games { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<Cart> Carts { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Cart>().HasOptional(x => x.CustomUser).WithOptionalPrincipal(y => y.Cart);
+            base.OnModelCreating(modelBuilder);
+        }
 
     }
 }
